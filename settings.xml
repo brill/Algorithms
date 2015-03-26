@@ -1,0 +1,26 @@
+<settings>
+	<profiles>
+		<profile>
+			<id>default-profile</id>
+			<properties>
+				<surefire.useFile>false</surefire.useFile>
+			</properties>
+			<repositories>
+				<repository>
+					<id>autodesk.eis.mavenrepo</id>
+					<releases><enabled>true</enabled></releases>
+					<snapshots><enabled>true</enabled></snapshots>
+					<url>http://eismaven.autodesk.com:8081/nexus/content/groups/repo</url>
+ 					<!-- <url>http://cacti:8081/nexus/content/groups/all</url> -->
+				</repository>
+			</repositories>
+		</profile>
+	</profiles>
+	<activeProfiles>
+		<activeProfile>default-profile</activeProfile>
+	</activeProfiles>
+	<pluginGroups>
+		<pluginGroup>org.mortbay.jetty</pluginGroup>
+		<pluginGroup>com.autodesk.eis</pluginGroup>
+	</pluginGroups>
+</settings>
